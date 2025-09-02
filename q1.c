@@ -25,7 +25,7 @@ int main() {
             scanf("%d", &position);
             for (i = position - 1; i < count - 1; i++) {
                 numbers[i] = numbers[i + 1];
-            count--;
+                count--;
             }
         } else if (choice == 5) {
             printf("Enter value: ");
