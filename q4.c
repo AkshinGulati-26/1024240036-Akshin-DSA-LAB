@@ -1,7 +1,7 @@
 //q4#
 #include <stdio.h>
 
-void reverseArray() {
+int reverseArray() {
     int numbers[100], count, start, end, temp;
     scanf("%d", &count);
     for (start = 0; start < count; start++) scanf("%d", &numbers[start]);
@@ -16,7 +16,7 @@ void reverseArray() {
     for (start = 0; start < count; start++) printf("%d ", numbers[start]);
     printf("\n");
 }
-void multiplyMatrices() {
+int multiplyMatrices() {
     int a[10][10], b[10][10], result[10][10];
     int rowsA, colsA, rowsB, colsB, i, j, k;
     scanf("%d%d", &rowsA, &colsA);
@@ -34,7 +34,7 @@ void multiplyMatrices() {
     }
 }
 
-void transposeMatrix() {
+int transposeMatrix() {
     int matrix[10][10], transpose[10][10];
     int rows, cols, i, j;
     scanf("%d%d", &rows, &cols);
