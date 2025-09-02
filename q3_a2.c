@@ -2,7 +2,6 @@
 
 int main() {
     int n;
-    printf("Enter n (array has numbers 1..n+1 with one missing): ");
     scanf("%d", &n);
     int arr[n];
     printf("Enter %d numbers: ", n);
