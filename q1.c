@@ -11,18 +11,22 @@ int main() {
             for (i = 0; i < count; i++) scanf("%d", &numbers[i]);
         } else if (choice == 2) {
             for (i = 0; i < count; i++) printf("%d ", numbers[i]);
-            printf("\n");
+        
         } else if (choice == 3) {
             printf("Enter position and value: ");
             scanf("%d%d", &position, &value);
-            for (i = count; i >= position; i--) numbers[i] = numbers[i - 1];
+            for (i = count; i >= position; i--) {
+            numbers[i] = numbers[i - 1];
             numbers[position - 1] = value;
             count++;
+            }
         } else if (choice == 4) {
             printf("Enter position: ");
             scanf("%d", &position);
-            for (i = position - 1; i < count - 1; i++) numbers[i] = numbers[i + 1];
+            for (i = position - 1; i < count - 1; i++) {
+                numbers[i] = numbers[i + 1];
             count--;
+            }
         } else if (choice == 5) {
             printf("Enter value: ");
             scanf("%d", &key);
