@@ -13,12 +13,14 @@ int main() {
     int l = 0, r = n - 1, found = -1;
     while (l <= r) {
         int mid = (l + r) / 2;
-        if (arr[mid] == key) { found = mid; break; }
+        if (arr[mid] == key) 
+        { found = mid;
+          break; }
         else if (arr[mid] < key) l = mid + 1;
         else r = mid - 1;
     }
 
-    if (found != -1) printf("Found at index %d\n", found);
-    else printf("Not found\n");
+    if (found != -1) printf("found at %d\n", found);
+    else printf("not found");
     return 0;
 }
