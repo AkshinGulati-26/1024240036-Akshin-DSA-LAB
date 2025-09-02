@@ -7,8 +7,10 @@ int main() {
     for (i = 0; i < count; i++) {
         for (j = i + 1; j < count;) {
             if (numbers[i] == numbers[j]) {
-                for (k = j; k < count - 1; k++) numbers[k] = numbers[k + 1];
-                count--;
+                for (k = j; k < count - 1; k++) {
+                    numbers[k] = numbers[k + 1];
+                    count--;
+                }
             } else j++;
         }
     }
