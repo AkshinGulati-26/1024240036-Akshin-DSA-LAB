@@ -6,7 +6,7 @@ int top = -1;
 
 void push(int x){
     if(top == MAX-1){
-        printf("Overflow\n");
+        printf("Overflow");
     }else{
         top++;
         stack[top] = x;
@@ -17,7 +17,7 @@ void pop(){
     if(top == -1){
         printf("Underflow\n");
     }else{
-        printf("%d\n", stack[top]);
+        printf("%d", stack[top]);
         top--;
     }
 }
